@@ -1,3 +1,29 @@
+"""
+STUDENT(SID:INTEGER,SNAME:VARCHAR,PHONE:INTEGER,MAJOR:VARCHAR,GPA:DECIMAL)
+Number of tuples:4
+
+1111:Robert Adams:1234:Computer Science:4.0:
+1112:Charles Bailey:5656:Computer Science:3.5:
+1113:David Beatle:1212:Mathematics:3.5:
+1114:Graham Gooch:5678:Computer Science:3.5:
+
+SELECT_SID_=_1114(SID:INTEGER,SNAME:VARCHAR,PHONE:INTEGER,MAJOR:VARCHAR,GPA:DECIMAL)
+Number of tuples:1
+
+1114:Graham Gooch:5678:Computer Science:3.5:
+
+SELECT_GPA_>_3.5(SID:INTEGER,SNAME:VARCHAR,PHONE:INTEGER,MAJOR:VARCHAR,GPA:DECIMAL)
+Number of tuples:1
+
+1111:Robert Adams:1234:Computer Science:4.0:
+
+SELECT_MAJOR_=_Computer Science(SID:INTEGER,SNAME:VARCHAR,PHONE:INTEGER,MAJOR:VARCHAR,GPA:DECIMAL)
+Number of tuples:3
+
+1111:Robert Adams:1234:Computer Science:4.0:
+1112:Charles Bailey:5656:Computer Science:3.5:
+1114:Graham Gooch:5678:Computer Science:3.5:
+"""
 from Database import *
 from Relation import *
 from Tuple import *
