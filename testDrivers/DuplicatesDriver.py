@@ -1,3 +1,25 @@
+"""
+Before Removing Duplicates: 
+STUDENT(SID:INTEGER,SNAME:VARCHAR)
+Number of tuples:7
+
+1111:Robert Adams:
+1112:Charles Bailey:
+1113:Donald James:
+1112:Charles Bailey:
+1112:Charles Bailey:
+1114:Michael James:
+1113:Donald James:
+
+After Removing Duplicates: 
+STUDENT(SID:INTEGER,SNAME:VARCHAR)
+Number of tuples:4
+
+1111:Robert Adams:
+1112:Charles Bailey:
+1113:Donald James:
+1114:Michael James:
+"""
 from Database import *
 from Relation import *
 from Tuple import *
