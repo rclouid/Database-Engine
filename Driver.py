@@ -8,6 +8,9 @@ Database Class: Encapsulates the entire database, which is nothing but a collect
 Relation Class: Encapsulates a relation or table; includes both schema and instance.
 Tuple Class: Encapsulates a tuple or row of a relation; includes both schema and instance.
 
+
+Database Schema: 
+
 STUDENT(SID:INTEGER,SNAME:VARCHAR,MAJOR:VARCHAR,GPA:DECIMAL)
 COURSE(CNUM:VARCHAR,CTITLE:VARCHAR,DESCRIPTION:VARCHAR,CREDITS:INTEGER)
 
@@ -21,6 +24,9 @@ Number of tuples:2
 Relation r2: 
 COURSE(CNUM:VARCHAR,CTITLE:VARCHAR,DESCRIPTION:VARCHAR,CREDITS:INTEGER)
 Number of tuples:2
+
+CSC 1301:Intro to CS I:Java Programming and breadth topics:4:
+CSC 1302:Intro to CS II:In depth Java Programming and some breadth topics:4:
 """
 
 CSC 1301:Intro to CS I:Java Programming and breadth topics:4:
