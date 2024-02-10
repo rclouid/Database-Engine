@@ -1,7 +1,49 @@
 from Database import *
 from Relation import *
 from Tuple import *
+"""
+REL1(COL1:INTEGER,COL2:VARCHAR)
+Number of tuples: 5
 
+1111:Robert Adams:
+1112:Charles Bailey:
+1114:Richard Johnson:
+1115:Graham Gooch:
+1116:John Miller:
+
+REL2(COL1:INTEGER,COL2:VARCHAR)
+Number of tuples: 5
+
+1113:John Smith:
+1112:Charles Bailey:
+1115:Graham Gooch:
+1116:John Miller:
+1117:Hugh Howell:
+
+REL1_UNION_REL2(COL1:INTEGER,COL2:VARCHAR)
+Number of tuples: 7
+
+1111:Robert Adams:
+1112:Charles Bailey:
+1114:Richard Johnson:
+1115:Graham Gooch:
+1116:John Miller:
+1113:John Smith:
+1117:Hugh Howell:
+
+REL1_INTERSECT_REL2(COL1:INTEGER,COL2:VARCHAR)
+Number of tuples: 3
+
+1112:Charles Bailey:
+1115:Graham Gooch:
+1116:John Miller:
+
+REL1_MINUS_REL2(COL1:INTEGER,COL2:VARCHAR)
+Number of tuples: 2
+
+1111:Robert Adams:
+1114:Richard Johnson:
+"""
 def main():
     db = Database()
 
