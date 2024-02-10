@@ -1,6 +1,34 @@
 from Database import *
 from Relation import *
 from Tuple import *
+"""
+STUDENT(SID:INTEGER,SNAME:VARCHAR,PHONE:INTEGER,MAJOR:VARCHAR,GPA:DECIMAL)
+Number of tuples:4
+
+1111:Robert Adams:1234:Computer Science:4.0:
+1112:Charles Bailey:5656:Computer Science:3.5:
+1113:David Beatle:1212:Mathematics:3.5:
+1114:Graham Gooch:5678:Computer Science:3.5:
+
+ENROLL(SID:INTEGER,COURSE:VARCHAR,GRADE:VARCHAR)
+Number of tuples:3
+
+1111:Csc 4710:A:
+1114:Csc 2310:B:
+1114:Csc 2310:A:
+
+COURSES(COURSE:VARCHAR,TITLE:VARCHAR,CREDITS:INTEGER)
+Number of tuples:3
+
+Csc 4710:Database Systems:4:
+Csc 2010:Java I:3:
+CSc 2310:Java II:3:
+
+ANSWER(SNAME:VARCHAR)
+Number of tuples:1
+
+Robert Adams:
+"""
 
 def main():
     db = Database()
