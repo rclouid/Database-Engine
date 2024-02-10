@@ -1,7 +1,72 @@
 from Database import *
 from Relation import *
 from Tuple import *
+"""
+REL1(COL1:INTEGER,COL2:VARCHAR)
+Number of tuples:5
 
+1111:Robert Adams:
+1112:Charles Bailey:
+1114:Richard Johnson:
+1115:Graham Gooch:
+1116:John Miller:
+
+RENAMECOLS(NEWCOL1:INTEGER,NEWCOL2:VARCHAR)
+Number of tuples:5
+
+1111:Robert Adams:
+1112:Charles Bailey:
+1114:Richard Johnson:
+1115:Graham Gooch:
+1116:John Miller:
+
+REL1(COL1:INTEGER,COL2:VARCHAR)
+Number of tuples:5
+
+1111:Robert Adams:
+1112:Charles Bailey:
+1114:Richard Johnson:
+1115:Graham Gooch:
+1116:John Miller:
+
+REL2(COL1:INTEGER,COL2:VARCHAR)
+Number of tuples:5
+
+1113:John Smith:
+1112:Charles Bailey:
+1115:Graham Gooch:
+1116:John Miller:
+1117:Hugh Howell:
+
+R1TIMESR2(REL1.COL1:INTEGER,REL1.COL2:VARCHAR,REL2.COL1:INTEGER,REL2.COL2:VARCHAR)
+Number of tuples:25
+
+1111:Robert Adams:1113:John Smith:
+1111:Robert Adams:1112:Charles Bailey:
+1111:Robert Adams:1115:Graham Gooch:
+1111:Robert Adams:1116:John Miller:
+1111:Robert Adams:1117:Hugh Howell:
+1112:Charles Bailey:1113:John Smith:
+1112:Charles Bailey:1112:Charles Bailey:
+1112:Charles Bailey:1115:Graham Gooch:
+1112:Charles Bailey:1116:John Miller:
+1112:Charles Bailey:1117:Hugh Howell:
+1114:Richard Johnson:1113:John Smith:
+1114:Richard Johnson:1112:Charles Bailey:
+1114:Richard Johnson:1115:Graham Gooch:
+1114:Richard Johnson:1116:John Miller:
+1114:Richard Johnson:1117:Hugh Howell:
+1115:Graham Gooch:1113:John Smith:
+1115:Graham Gooch:1112:Charles Bailey:
+1115:Graham Gooch:1115:Graham Gooch:
+1115:Graham Gooch:1116:John Miller:
+1115:Graham Gooch:1117:Hugh Howell:
+1116:John Miller:1113:John Smith:
+1116:John Miller:1112:Charles Bailey:
+1116:John Miller:1115:Graham Gooch:
+1116:John Miller:1116:John Miller:
+1116:John Miller:1117:Hugh Howell:
+"""
 def main():
 	db = Database()
 	attr1 = ["COL1","COL2"]
